@@ -1,10 +1,17 @@
-package com.example.viaCep.model;
+package com.example.viaCep.dto;
 
-public class ViaCep {
+
+public class ViaCepResponseDto {
 
     private String cep;
     private String logradouro;
     private String localidade;
+
+    public ViaCepResponseDto() {
+        this.cep = cep;
+        this.logradouro = logradouro;
+        this.localidade = localidade;
+    }
 
     public String getCep() {
         return cep;

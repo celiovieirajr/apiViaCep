@@ -1,6 +1,6 @@
 package com.example.viaCep.controller;
 
-import com.example.viaCep.model.ViaCep;
+import com.example.viaCep.dto.ViaCepResponseDto;
 import com.example.viaCep.service.ViaCepService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,7 +17,7 @@ public class ViaCepController {
     }
 
     @GetMapping("{codCep}/json/")
-    Mono<ViaCep> getCep(@PathVariable String codCep) {
+    Mono<ViaCepResponseDto> getCep(@PathVariable String codCep) {
         return viaCepService.getCepService(codCep);
     }
 
