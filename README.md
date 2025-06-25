@@ -96,6 +96,7 @@ GET http://localhost:8080/cep/01001000
 
 | Tarefa                                                   | Status  |
 |----------------------------------------------------------|---------|
+| Criar restando do model                                  | 🔜      |
 | Criar DTO para resposta customizada                      | 🔜      |
 | Tratar exceções com mensagens amigáveis                  | 🔜      |
 | Implementar testes unitários no Service                  | 🔜      |
